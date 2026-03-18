@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { DownOutlined } from "@ant-design/icons";
-import { Dropdown, Space } from "antd";
+import { Dropdown } from "antd";
 import { MenuFoldOutlined } from "@ant-design/icons";
 
 const ListMenuMobile = () => {
@@ -33,9 +32,9 @@ const ListMenuMobile = () => {
       }}
       trigger={["click"]}
     >
-      <a style={{ marginRight: 18 }} onClick={(e) => e.preventDefault()}>
+      <button style={{ marginRight: 18 }} onClick={(e) => e.preventDefault()}>
         <MenuFoldOutlined />
-      </a>
+      </button>
     </Dropdown>
   );
 };
